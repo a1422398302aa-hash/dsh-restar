@@ -1,6 +1,6 @@
 # DS_RESTAR
 
-给 [DeepSeek Harness](https://github.com/) 用的「自助重启」小部件。
+给 DeepSeek Harness 用的「自助重启」小部件。
 
 排一个倒计时，时间到了由**进程外**的看守程序结束 DSH、等一会儿、再把它拉起来。整个过程你只需要说一句「重启」，或者点一下卡片上的按钮。
 
