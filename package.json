@@ -1,6 +1,6 @@
 {
   "name": "dsh-reboot",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "DS_RESTAR —— 给 DeepSeek Harness 的自助重启小部件：倒计时 → 结束进程 → 空档 → 自动拉起",
