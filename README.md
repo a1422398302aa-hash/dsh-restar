@@ -93,7 +93,3 @@ lib/index.js     宿主半：工具 + /x-dsh-restar/{state,cancel} 路由
 lib/client.js    浏览器半：倒计时卡片
 watchdog/        看守程序（独立运行，也可单独使用）
 ```
-
-## License
-
-MIT
