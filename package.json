@@ -1,7 +1,6 @@
 {
   "name": "dsh-reboot",
   "version": "0.2.1",
-  "private": true,
   "type": "module",
   "description": "DS_RESTAR —— 给 DeepSeek Harness 的自助重启小部件：倒计时 → 结束进程 → 空档 → 自动拉起",
   "main": "./lib/index.js",
@@ -20,10 +19,21 @@
   "keywords": [
     "dsh",
     "deepseek-harness",
+    "dsh-plugin",
     "plugin",
     "restart",
-    "watchdog"
+    "watchdog",
+    "windows"
   ],
+  "homepage": "https://github.com/a1422398302aa-hash/dsh-restar#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1422398302aa-hash/dsh-restar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a1422398302aa-hash/dsh-restar/issues"
+  },
+  "author": "MOLNG_ (a1422398302aa-hash)",
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {
