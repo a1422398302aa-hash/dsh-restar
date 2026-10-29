@@ -100,7 +100,7 @@ bin\status.cmd
 
 exitAfterRestart: true（默认）时，**重启成功DS_RESTAR就退出**，不常驻：
 
-- 需要重启时才由 dsh-reboot 插件把它拉起来（in\start.cmd 走 WMI，父进程是 WmiPrvSE.exe，不在 DSH 的 job 里，所以 DSH 被杀不会带走它）。
+- 需要重启时才由 dsh-restar 插件把它拉起来（in\start.cmd 走 WMI，父进程是 WmiPrvSE.exe，不在 DSH 的 job 里，所以 DSH 被杀不会带走它）。
 - 拉起来 → 干活 → 成功了 process.exit(0)，data/watchdog.json 自动删除；下次 dsh_reboot 再拉一次。
 - 三次都失败则**不退出**，留着兜底计划任务在 4 分钟后补一刀。
 

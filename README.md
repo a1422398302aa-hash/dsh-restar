@@ -14,7 +14,7 @@
 
 | 角色 | 位置 | 职责 |
 |---|---|---|
-| `dsh-reboot`（本插件） | DSH 进程内 | 下单（写排期文件）、查单、提供工具和前端卡片 |
+| `dsh-restar`（本插件） | DSH 进程内 | 下单（写排期文件）、查单、提供工具和前端卡片 |
 | DS_RESTAR 看守进程 | 独立 node 进程 | 真正执行 kill / 等待 / start，并验证新进程是否活着 |
 
 看守进程由 WMI 拉起，父进程是 `WmiPrvSE.exe`，**不在 DSH 的 job object 里**——否则 `taskkill /F` 会把看守一起带走（这是第一版踩过的坑）。
@@ -89,7 +89,7 @@ dsh plugin add <本仓库地址或本地路径>
 ## 目录
 
 ```
-lib/index.js     宿主半：工具 + /x-dsh-reboot/{state,cancel} 路由
+lib/index.js     宿主半：工具 + /x-dsh-restar/{state,cancel} 路由
 lib/client.js    浏览器半：倒计时卡片
 watchdog/        看守程序（独立运行，也可单独使用）
 ```

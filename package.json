@@ -1,6 +1,6 @@
 {
-  "name": "dsh-reboot",
-  "version": "0.2.1",
+  "name": "dsh-restar",
+  "version": "0.3.0",
   "type": "module",
   "description": "DS_RESTAR —— 给 DeepSeek Harness 的自助重启小部件：倒计时 → 结束进程 → 空档 → 自动拉起",
   "main": "./lib/index.js",
@@ -35,7 +35,9 @@
   },
   "author": "MOLNG_ (a1422398302aa-hash)",
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "inject": [],
