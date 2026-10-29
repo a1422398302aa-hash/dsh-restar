@@ -1,0 +1,14 @@
+{
+  "name": "dsh-watchdog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "进程外守望：插件源码变化或收到重启请求时，重启 DSH",
+  "bin": { "dsh-watchdog": "src/watchdog.mjs" },
+  "scripts": {
+    "start": "node src/watchdog.mjs",
+    "req": "node bin/req.mjs",
+    "status": "node bin/status.mjs"
+  },
+  "license": "MIT"
+}

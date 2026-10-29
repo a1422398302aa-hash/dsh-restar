@@ -1,0 +1,22 @@
+{
+  "app": {
+    "exe": "C:\\Program Files\\DeepSeek Harness\\DeepSeek Harness.exe",
+    "imageName": "DeepSeek Harness.exe",
+    "port": 0,
+    "args": []
+  },
+  "timing": {
+    "debounceMs": 1500,
+    "drainMs": 4000,
+    "minIntervalMs": 30000,
+    "killTimeoutMs": 20000,
+    "bootTimeoutMs": 30000,
+    "killGapMs": 30000
+  },
+  "watch": [],
+  "ignore": ["node_modules", "data", ".git", "*.log", "*.tmp"],
+  "sync": [],
+  "autoRestartOnChange": false,
+  "exitAfterRestart": true,
+  "enabled": true
+}
